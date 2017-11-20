@@ -56,6 +56,7 @@ void init()
 
 void processAllPairs()
 {
+  int pairs = 0;
   for (int i = 0; i < total_length; i++)
   {
     hole_t *h1, *h2;
@@ -73,7 +74,9 @@ void processAllPairs()
       std::cout << "(" << h1->x << "," << h1->y << ")";
       std::cout << "<=>";
       std::cout << "(" << h2->x << "," << h2->y << ")";
-      std::cout << ", ";
+
+      if (++pairs < total_length / 2)
+        std::cout << ", ";
     }
   }
   count++;
