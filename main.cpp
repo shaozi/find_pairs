@@ -80,13 +80,12 @@ void processAllPairs()
   std::cout << std::endl;
 }
 
-
 int main(int argc, char **argv)
 {
   assert(argc == 2);
   int n = atoi(argv[1]);
   assert(n > 0);
-  total_length = 2*n;
+  total_length = 2 * n;
   init();
   pair(holes, total_length);
   std::cout << "Total " << count << " combinations in " << total_length << " wormholes!" << std::endl;
