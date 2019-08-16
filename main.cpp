@@ -6,7 +6,9 @@
 hole_t *holes;
 int count = 0;
 int total_length;
-
+/**
+ * some comments
+ */
 void connect(hole_t *h1, hole_t *h2)
 {
   if (h1->connect)
