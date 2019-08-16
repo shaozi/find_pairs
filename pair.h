@@ -1,5 +1,5 @@
 /**
- * changes in local repo
+ * changes in local repo. Conflict change from remote
  * */
 struct hole_t
 {
